@@ -1,0 +1,152 @@
+:root {
+    --indigo: #476071;
+    --bleu: #2c9bd8;
+    --tealBleu: #a2bcbf;
+    --teal: #347991;
+    --white: #fff
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--indigo);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--teal);
+    height: 5em;
+}
+
+nav{
+    height: 5em;
+    display: flex;
+    justify-content: center; /* para espaço entre o botão e o nav */
+    align-items: center;
+    column-gap: 1em;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+#hamburger-menu {
+    display: none; /* oculta o botão por padrão */
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+#perfil_img {
+    width: 303px;
+    height: 301px;
+}
+
+.main-content {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+#intro {
+    width: 50%;
+    margin-left: 5em;
+}
+
+.main-content li {
+    margin-bottom: 1em;
+    list-style: none;
+    font-size: 32px;
+}
+ul.academico-list li::before {
+    content: '🎓'; 
+}
+
+.project_content h2 {
+    font-size: 48px;
+    margin-bottom: 1.5em;
+}
+
+.project_content a {
+    color: var(--white);
+}
+
+
+footer {
+    background-color: var(--teal);
+    width: 100%;
+    height: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        width: 80%;
+        margin: 0 auto;
+        flex-direction: column;
+        row-gap: 1em;
+    }
+
+    #intro {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .main-content li {
+        margin-bottom: 1em;
+        list-style: none;
+        font-size: 22px;
+    }
+
+    .project_content h2 {
+        font-size: 32px;
+        margin-bottom: 1em;
+    }
+}
+
+@media (max-width: 374px) {
+    header {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        height: 3em;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #perfil_img {
+        width: 262px;
+        height: 260px;
+    }
+
+    #hamburger-menu {
+        display: block;
+        color: var(--white);
+    }
+
+    footer {
+        background-color: var(--teal);
+        width: 100%;
+        height: 1.7em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+    }
+}

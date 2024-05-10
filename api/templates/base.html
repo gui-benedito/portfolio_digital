@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilo/normalize.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilo/style.css') }}"/>
+</head>
+<body>
+    <header>
+        <button id="hamburger-menu">☰</button>
+        <nav>
+            <a href="/">Home</a> |
+            <a href="/hobbies">Hobbies</a> |
+            <a href="/projetos">Projetos</a> |
+            <a href="/academico">Acadêmico</a> 
+        </nav>
+    </header>
+    <section class="main-content">
+        {% block conteudo %} 
+        {% endblock %}
+    </section>
+    <footer>
+        <p>© 2024 - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
