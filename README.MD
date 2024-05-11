@@ -10,6 +10,9 @@
     <li>Git</li>
     <li>GitHub</li>
     <li>HTML</li>
+    <li>Css</li>
+    <li>Python</li>
+    <li>Flask</li>
     <li>Markdown</li>
 </ul>
 
