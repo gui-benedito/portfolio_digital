@@ -4,9 +4,11 @@
 <section class="project_content">
     <h2>Projetos acadêmicos</h2>
     <ul class="project-list">
-        <li><a href="https://github.com/gui-benedito/projeto_api" target="_blank">Projeto API 1°DSM - Smart Farm</a></li>
-        <li><a href="https://github.com/gui-benedito/portfolio_digital" target="_blank">Portifólio digital</a></li>
-        <li><a href="https://github.com/gui-benedito/studio" target="_blank">Studio de atividades físicas</a></li>
+        {% for projeto in projetos %}
+            <li>
+                <a href="{{ projeto.link }}" target="_blank">{{ projeto.title }}</a>
+            </li>
+        {% endfor %}
     </ul>
 </section>
 {% endblock %}

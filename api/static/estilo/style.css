@@ -49,6 +49,7 @@ nav a {
 #perfil_img {
     width: 303px;
     height: 301px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .main-content {
@@ -74,6 +75,19 @@ ul.academico-list li::before {
     content: '🎓'; 
 }
 
+.hobbies-list #futebol::before {
+    content: '⚽';
+    margin-right: 5px;
+}
+.hobbies-list #academia::before {
+    content: '💪🏻';
+    margin-right: 5px;
+}
+.hobbies-list #ler::before {
+    content: '📖';
+    margin-right: 5px;
+}
+
 .project_content h2 {
     font-size: 48px;
     margin-bottom: 1.5em;
@@ -91,6 +105,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: .5em;
 }
 
 @media (max-width: 768px) {
@@ -116,6 +131,12 @@ footer {
         font-size: 32px;
         margin-bottom: 1em;
     }
+
+    #perfil_img {
+        width: 262px;
+        height: 260px;
+        margin-top: 1em;
+    }
 }
 
 @media (max-width: 374px) {
@@ -133,6 +154,7 @@ footer {
     #perfil_img {
         width: 262px;
         height: 260px;
+        margin-top: 1em;
     }
 
     #hamburger-menu {
@@ -148,5 +170,6 @@ footer {
         justify-content: center;
         align-items: center;
         font-size: 14px;
+        padding-top: .8em;
     }
 }

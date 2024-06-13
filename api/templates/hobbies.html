@@ -3,9 +3,11 @@
 {% block conteudo %} 
 <section class="hobbies_content">
     <ul class="hobbies-list">
-        <li>⚽ Assistir e jogar futebol</li>
-        <li>💪🏻 Ir pra academia</li>
-        <li>📖 Ler</li>
+        {% for hobbie in hobbies %}
+            <li id="{{ hobbie.id }}">
+                {{ hobbie.hobbie }}
+            </li>
+        {% endfor %}
     </ul>
 </section>
 {% endblock %}
