@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from  statics import projects, hobbies, academicos 
+from  statics import projects, hobbies, academics
 
 app = Flask(__name__)
 
@@ -21,4 +21,4 @@ def projetos():
 @app.route("/academico")
 def academico_page():
     titulo = "Acadêmico"
-    return render_template ("academico.html", title = titulo, academicos=academicos)
+    return render_template ("academico.html", title = titulo, academicos=academics)

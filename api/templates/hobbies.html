@@ -2,12 +2,15 @@
 
 {% block conteudo %} 
 <section class="hobbies_content">
-    <ul class="hobbies-list">
+    <div class="hobbies-list">
         {% for hobbie in hobbies %}
-            <li id="{{ hobbie.id }}">
-                {{ hobbie.hobbie }}
-            </li>
+            <div class="card text-dark bg-light hobbie-card" style="width: 18rem;">
+                <img src="{{ hobbie.img }}" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title" id="{{ hobbie.id }}">{{ hobbie.hobbie }}</h5>
+                </div>
+            </div>
         {% endfor %}
-    </ul>
+    </div>
 </section>
 {% endblock %}

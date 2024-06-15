@@ -2,12 +2,16 @@
 
 {% block conteudo %} 
     <section class="academico_content">
-        <ul class="academico-list">
+        <div class="academico-list">
             {% for academico in academicos %}
-            <li>
-                {{ academico.title }}
-            </li>
+                <div class="card academico-card" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title text-dark">{{ academico.institution }}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ academico.title }}</h6>
+                    <p class="card-text text-dark">{{ academico.date }}</p>
+                    </div>
+                </div>
             {% endfor %}
-        </ul>
+        </div>
     </section>
 {% endblock %}

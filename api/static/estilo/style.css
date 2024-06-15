@@ -28,7 +28,7 @@ header {
 nav{
     height: 5em;
     display: flex;
-    justify-content: center; /* para espaço entre o botão e o nav */
+    justify-content: center; 
     align-items: center;
     column-gap: 1em;
 }
@@ -54,11 +54,12 @@ nav a {
 
 .main-content {
     display: flex;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
     flex: 1;
+    padding: 10px;
 }
 
 #intro {
@@ -71,6 +72,30 @@ nav a {
     list-style: none;
     font-size: 32px;
 }
+
+.hobbies-list, .project-list, .academico-list {
+    display: flex;
+    column-gap: 2.5em;
+    flex-wrap: wrap;
+}
+
+.project-card, .hobbie-card, .academico-card {
+    padding: 20px 10px 10px;
+    text-align: center;
+}
+
+.project-card img {
+    width: 159px;
+    height: 91px;
+    margin: 0 auto;
+}
+
+.hobbie-card img {
+    width: auto;
+    height: 250px;
+    margin: 0 auto;
+}
+
 ul.academico-list li::before {
     content: '🎓'; 
 }
@@ -79,7 +104,7 @@ ul.academico-list li::before {
     content: '⚽';
     margin-right: 5px;
 }
-.hobbies-list #academia::before {
+.hobbies-list #atividades::before {
     content: '💪🏻';
     margin-right: 5px;
 }
@@ -97,7 +122,6 @@ ul.academico-list li::before {
     color: var(--white);
 }
 
-
 footer {
     background-color: var(--teal);
     width: 100%;
@@ -108,12 +132,31 @@ footer {
     padding-top: .5em;
 }
 
+@media (max-width: 1200px) {
+    .hobbies-list, .project-list, .academico-list {
+        row-gap: 1em;
+    }
+}
+
+@media (max-width: 790px) {
+    .main-content {
+        justify-content: center;
+        align-items: center;
+    }
+    .hobbies-list, .project-list, .academico-list {
+        flex-direction: column;
+        row-gap: 1em;
+    }
+}
+
 @media (max-width: 768px) {
     .main-content {
         width: 80%;
         margin: 0 auto;
         flex-direction: column;
         row-gap: 1em;
+        justify-content: center;
+        align-items: center;
     }
 
     #intro {
@@ -136,6 +179,11 @@ footer {
         width: 262px;
         height: 260px;
         margin-top: 1em;
+    }
+
+    .hobbies-list, .project-list, .academico-list {
+        flex-direction: column;
+        row-gap: 1em;
     }
 }
 
