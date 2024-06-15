@@ -4,13 +4,13 @@
 <section class="project_content">
     <div class="project-list">
         {% for projeto in projetos %}
-            <div class="card text-dark bg-light project-card" style="width: 18rem;">
+            <div class="card project-card" style="width: 18rem;">
                 <img src="{{ projeto.img }}" class="card-img-top" alt="">
                 <div class="card-body">
                     <h5 class="card-title">{{ projeto.title }}</h5>
                     <p class="card-text">{{ projeto.description }}</p>
                 </div>
-                <a href="{{ projeto.link }}" class="btn btn-outline-light text-dark" target="_blank">Visitar</a>
+                <a href="{{ projeto.link }}" class="btn" target="_blank">Visitar</a>
             </div>
         {% endfor %}
     </div>

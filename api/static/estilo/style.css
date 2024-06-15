@@ -1,9 +1,8 @@
 :root {
-    --indigo: #476071;
-    --bleu: #2c9bd8;
-    --tealBleu: #a2bcbf;
-    --teal: #347991;
-    --white: #fff
+    --primary: #F5F5F5;
+    --secondary: #333333;
+    --third: #4f8298;
+    --fourthy: #E0E0E0;
 }
 
 *{
@@ -13,15 +12,15 @@
 }
 
 body {
-    background-color: var(--indigo);
-    color: var(--white);
+    background-color: var(--primary);
+    color: var(--secondary);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
 header {
-    background-color: var(--teal);
+    background-color: var(--third);
     height: 5em;
 }
 
@@ -67,10 +66,22 @@ nav a {
     margin-left: 5em;
 }
 
+.card {
+    background-color: var(--fourthy);
+}
+
 .main-content li {
     margin-bottom: 1em;
     list-style: none;
     font-size: 32px;
+}
+
+.btn {
+    background-color: var(--third);
+    color: var(--fourthy) !important; 
+}
+.btn-nav:hover {
+    color: var(--third) !important; 
 }
 
 .hobbies-list, .project-list, .academico-list {
@@ -105,7 +116,7 @@ ul.academico-list li::before {
     margin-right: 5px;
 }
 .hobbies-list #atividades::before {
-    content: '💪🏻';
+    content: '🦾';
     margin-right: 5px;
 }
 .hobbies-list #ler::before {
@@ -123,7 +134,8 @@ ul.academico-list li::before {
 }
 
 footer {
-    background-color: var(--teal);
+    background-color: var(--third);
+    color: var(--fourthy);
     width: 100%;
     height: 2.5em;
     display: flex;

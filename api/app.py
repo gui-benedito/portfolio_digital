@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from  statics import projects, hobbies, academics
+from  estaticos import projects, hobbies, academics
 
 app = Flask(__name__)
 
