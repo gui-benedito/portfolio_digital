@@ -57,27 +57,3 @@ academics = [
         'img': '../static/img/hourglass.svg'
     }
 ]
-
-front = [
-    {
-        'technologie': 'HTML 5'
-    },
-    {
-        'technologie': 'CSS 3'
-    }
-]
-
-back = [
-    {
-        'technologie': 'Python'
-    },
-    {
-        'technologie': 'Flask'
-    }
-]
-
-banco = [
-    {
-        'technologie': 'MySQL'
-    }
-]

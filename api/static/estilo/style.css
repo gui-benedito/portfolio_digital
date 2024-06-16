@@ -20,11 +20,67 @@ body {
 }
 
 header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--third);
-    height: 5em;
 }
 
-nav{
+#hamburger-menu {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.collapse {
+    display: none;
+}
+
+.collapse.show {
+    display: block;
+}
+
+.bg-body-tertiary {
+    background-color: #f8f9fa;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.shadow-3 {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.p-4 {
+    padding: 1.5rem;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.btn-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 0.5rem 1rem;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+nav, .nav-btn{
     height: 5em;
     display: flex;
     justify-content: center; 
@@ -45,10 +101,15 @@ nav a {
     cursor: pointer;
 }
 
+.logo {
+    margin-right: 2em;
+}
+
 #perfil_img {
     width: 303px;
     height: 301px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    filter: opacity(75%);
 }
 
 .main-content {
@@ -137,11 +198,12 @@ footer {
     background-color: var(--third);
     color: var(--fourthy);
     width: 100%;
-    height: 2.5em;
+    height: 5em;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: .5em;
+    padding: .5em;
 }
 
 @media (max-width: 1200px) {
@@ -199,16 +261,41 @@ footer {
     }
 }
 
+@media (max-width: 640px) {
+    .logo {
+        display: none;
+    }
+}
+
 @media (max-width: 374px) {
+    .nav-content {
+        display: none;
+    }
+
+    .nav-content.active {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #hamburger-menu {
+        display: block;
+        color: var(--fourthy);
+    }
+
+    .nav-btn {
+        display: flex;
+        flex-direction: column;
+        flex-direction: row; 
+        justify-content: center;
+    }
+
     header {
         display: flex;
         justify-content: center; 
         align-items: center;
         height: 3em;
-    }
-
-    nav {
-        display: none;
     }
 
     #perfil_img {
@@ -217,19 +304,14 @@ footer {
         margin-top: 1em;
     }
 
-    #hamburger-menu {
-        display: block;
-        color: var(--white);
-    }
-
     footer {
-        background-color: var(--teal);
+        background-color: var(--third);
         width: 100%;
-        height: 1.7em;
+        height: 5em;
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 14px;
-        padding-top: .8em;
+        padding: .8em;
     }
 }
