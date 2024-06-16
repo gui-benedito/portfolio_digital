@@ -5,18 +5,22 @@
 # Portfólio digital de Guilherme dos Santos Benedito
 ## Orientador: Fabrício Galende Marques de Carvalho
 
-### Tecnologias utilizadas:
-<ul>
-    <li>Git</li>
-    <li>GitHub</li>
-    <li>HTML</li>
-    <li>Css</li>
-    <li>Python</li>
-    <li>Flask</li>
-    <li>Markdown</li>
-</ul>
+### Tecnologias utilizadas:    
+
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+<img src="https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white" />
+<img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" />
+<img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" />
+<img src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white" />
+<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
+
 
 <h2>Execute a aplicação: </h2>
+<h3>Opção 1:</h3>
+<p>Acesse o site <a href="https://guibenedito.vercel.app/" target="_blank">aqui!</a>
+
+<h3>Opção 2:</h3>
 <h4>1. Certifique-se de possuir o python instalado, caso não possua, <a href="https://www.python.org/downloads/" target="_blank"> clique aqui. </a> </h4>
 <h4>2. Crie uma pasta vazia</h4>
 <h4>3. Abra o Terminal ou CMD no diretório da pasta vazia</h4>
