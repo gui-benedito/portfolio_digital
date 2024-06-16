@@ -32,7 +32,7 @@
   
       python -m venv venv
       .\venv\Scripts\activate
-      pip install -r requirements.txt
+      pip install -r ..\requirements.txt
   
 <h4>7. Execute a aplicação com o seguinte comando: </h4>
   
