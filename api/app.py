@@ -6,7 +6,7 @@ app = Flask(__name__)
 projects = [
     {
         'title': 'API 1°DSM - Smart Farm',
-        'link': 'https://github.com/gui-benedito/projeto_api',
+        'link': 'https://github.com/SkyFlyTeam/SmartFarm',
         'img': '../static/img/apiI.svg',
         'description': 'Aplicação para acompanhamento real dos valores captados pelos sensores de uma estufa.'
     },
