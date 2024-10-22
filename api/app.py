@@ -11,6 +11,12 @@ projects = [
         'description': 'Aplicação para acompanhamento real dos valores captados pelos sensores de uma estufa.'
     },
     {
+        'title': 'API 2°DSM - CloudStock',
+        'link': 'https://github.com/SkyFlyTeam/cloudStock',
+        'img': '../static/img/apiII.png',
+        'description': 'Aplicação para gerenciamento e controle de estoque.'
+    },
+    {
         'title': 'Portifólio digital',
         'link': 'https://github.com/gui-benedito/portfolio_digital',
         'img': '../static/img/portifolio.png',
