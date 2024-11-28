@@ -7,6 +7,7 @@
                     <h5 class="card-title"><%= projeto.title %></h5>
                     <p class="card-text"><%= projeto.description %></p>
                 </div>
+                <%- projeto.icons %>
                 <a href="<%= projeto.link %>" class="btn" target="_blank">Visitar</a>
             </div>
         <% }) %>

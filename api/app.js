@@ -34,5 +34,9 @@ app.get('/academico', (req, res) => {
     res.render('academico', { title: 'Acadêmico', academicos: academics });
 });
 
+app.listen(5000, (err) => {
+    if (err) throw err
+})
+
 // Exporta o app para o Vercel
 module.exports = app;

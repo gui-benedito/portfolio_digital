@@ -1,8 +1,8 @@
 :root {
-    --primary: #F5F5F5;
-    --secondary: #333333;
-    --third: #4f8298;
-    --fourthy: #E0E0E0;
+    --primary: #E8EEF1; /* Azul claro para fundos */
+    --secondary: #2D3742; /* Azul escuro elegante */
+    --third: #546A7B; /* Azul acinzentado */
+    --fourthy: #99AAB5; /* Azul pastel para detalhes */
 }
 
 *{
@@ -139,7 +139,7 @@ nav a {
 
 .btn {
     background-color: var(--third);
-    color: var(--fourthy) !important; 
+    color: var(--primary) !important; 
 }
 .btn-nav:hover {
     color: var(--third) !important; 
@@ -156,10 +156,23 @@ nav a {
     text-align: center;
 }
 
+.project-card {
+    display: flex;
+    flex-direction: column;
+}
+
 .project-card img {
     width: 159px;
     height: 91px;
     margin: 0 auto;
+}
+
+/* .card-text {
+    text-align: start;
+} */
+
+.icons {
+    padding-bottom: 0;
 }
 
 .hobbie-card img {
@@ -196,7 +209,7 @@ ul.academico-list li::before {
 
 footer {
     background-color: var(--third);
-    color: var(--fourthy);
+    color: var(--primary);
     width: 100%;
     height: 5em;
     display: flex;
