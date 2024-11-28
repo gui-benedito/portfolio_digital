@@ -1,0 +1,12 @@
+<section class="hobbies_content">
+    <div class="hobbies-list">
+        <% hobbies.forEach((hobbie) => { %>
+            <div class="card hobbie-card" style="width: 18rem;">
+                <img src="<%= hobbie.img %>" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title" id="<%= hobbie.id %>"><%= hobbie.hobbie %></h5>
+                </div>
+            </div>
+        <% }) %>
+    </div>
+</section>

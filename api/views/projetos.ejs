@@ -1,0 +1,14 @@
+<section class="project_content">
+    <div class="project-list">
+        <% projetos.forEach((projeto) => { %>
+            <div class="card project-card" style="width: 18rem;">
+                <img src="<%= projeto.img %>" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title"><%= projeto.title %></h5>
+                    <p class="card-text"><%= projeto.description %></p>
+                </div>
+                <a href="<%= projeto.link %>" class="btn" target="_blank">Visitar</a>
+            </div>
+        <% }) %>
+    </div>
+</section>
