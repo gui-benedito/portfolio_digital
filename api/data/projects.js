@@ -20,23 +20,23 @@ const projects = [
             </div>`
     },
     {
-        title: 'Portifólio digital',
-        link: 'https://github.com/gui-benedito/portfolio_digital',
-        img: '/img/portifolio.png',
-        description: `Portifólio Digital para amostra de projetos e alguns assuntos pessoais.`,
+        title: 'API 3°DSM - Bee On Time',
+        link: 'https://github.com/SkyFlyTeam/BeeOnTime-documentation',
+        img: '/img/bot.png',
+        description: `O BeeOnTime é um aplicação web moderna e responsiva para o controle de ponto eletrônico dos colaboradores de uma empresa.`,
         icons: `
             <div class='icons'>
-                <img src="https://skillicons.dev/icons?i=html,css,javascript,nodejs" alt="Tecnologias usadas">
+                <img src="https://skillicons.dev/icons?i=java,react,sequelize,mongodb" alt="Tecnologias usadas">
             </div>`
     },
     {
-        title: 'Studio de atividades físicas',
-        link: 'https://github.com/gui-benedito/studio',
-        img: '/img/logo.png',
-        description: `Aplicação web para desafio da matéria Desenvolvimento Web.`,
+        title: 'API 4°DSM - Atmos',
+        link: 'https://github.com/SkyFlyTeam/Atmos-documentation',
+        img: '/img/atmos.png',
+        description: `Aplicação web, capaz de monitorar o clima e as condições do solo por meio de estações meteorológicas.`,
         icons: `
             <div class='icons'>
-                <img src="https://skillicons.dev/icons?i=html,css,python,flask" alt="Tecnologias usadas">
+                <img src="https://skillicons.dev/icons?i=react,nodejs,python,mongodb,postgresql" alt="Tecnologias usadas">
             </div>`
     }
 ];
