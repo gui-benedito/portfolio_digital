@@ -1,0 +1,20 @@
+<section class="academico_content">
+    <div class="academico-list">
+        <% formacoes.forEach((formacao)=> { %>
+            <div class="card academico-card" style="width: 18rem;">
+                <div class="card-body">
+                    <img src="<%= formacao.img %>" alt="">
+                    <h5 class="card-title">
+                        <%= formacao.institution %>
+                    </h5>
+                    <h6 class="card-subtitle mb-2">
+                        <%= formacao.title %>
+                    </h6>
+                    <p class="card-text">
+                        <%= formacao.date %>
+                    </p>
+                </div>
+            </div>
+            <% }) %>
+    </div>
+</section>

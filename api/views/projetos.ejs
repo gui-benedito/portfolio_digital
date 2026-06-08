@@ -1,15 +1,59 @@
 <section class="project_content">
-    <div class="project-list">
-        <% projetos.forEach((projeto) => { %>
-            <div class="card project-card" style="width: 18rem;">
-                <img src="<%= projeto.img %>" class="card-img-top" alt="">
-                <div class="card-body">
-                    <h5 class="card-title"><%= projeto.title %></h5>
-                    <p class="card-text"><%= projeto.description %></p>
+    <div class="projects-section">
+        <h2 class="section-title">Projetos Profissionais</h2>
+        <div class="project-list">
+            <% projetosProfissionais.forEach((projeto)=> { %>
+                <div class="card project-card" style="width: 18rem;">
+                    <% if (projeto.img) { %>
+                        <img src="<%= projeto.img %>" class="card-img-top" alt="<%= projeto.title %>">
+                    <% } else { %>
+                        <div class="project-img-placeholder">
+                            <span class="placeholder-icon">💼</span>
+                        </div>
+                    <% } %>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%= projeto.title %>
+                        </h5>
+                        <p class="card-text">
+                            <%= projeto.description %>
+                        </p>
+                    </div>
+                    <div class="project-footer">
+                        <%- projeto.icons %>
+                        <a href="<%= projeto.link %>" class="btn" target="_blank">Visitar</a>
+                    </div>
                 </div>
-                <%- projeto.icons %>
-                <a href="<%= projeto.link %>" class="btn" target="_blank">Visitar</a>
-            </div>
-        <% }) %>
+            <% }) %>
+        </div>
+    </div>
+
+    <div class="projects-section">
+        <h2 class="section-title">Projetos Acadêmicos</h2>
+        <div class="project-list">
+            <% projetosAcademicos.forEach((projeto)=> { %>
+                <div class="card project-card" style="width: 18rem;">
+                    <% if (projeto.img) { %>
+                        <img src="<%= projeto.img %>" class="card-img-top" alt="<%= projeto.title %>">
+                    <% } else { %>
+                        <div class="project-img-placeholder">
+                            <span class="placeholder-icon">🎓</span>
+                        </div>
+                    <% } %>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%= projeto.title %>
+                        </h5>
+                        <p class="card-text">
+                            <%= projeto.description %>
+                        </p>
+                    </div>
+                    <div class="project-footer">
+                        <%- projeto.icons %>
+                        <a href="<%= projeto.link %>" class="btn" target="_blank">Visitar</a>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
     </div>
 </section>

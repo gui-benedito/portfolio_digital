@@ -1,4 +1,4 @@
-const academics = [
+const formations = [
     {
         title: 'Ensino Médio',
         institution: 'E. E. Major Aviador José Mariotto Ferreira',
@@ -19,4 +19,4 @@ const academics = [
     }
 ];
 
-module.exports = academics;
+module.exports = formations;

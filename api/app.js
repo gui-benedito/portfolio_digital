@@ -4,7 +4,7 @@ const expressLayouts = require('express-ejs-layouts');
 
 const projects = require('./data/projects');
 const hobbies = require('./data/hobbies');
-const academics = require('./data/academics');
+const formations = require('./data/formations');
 
 const app = express();
 
@@ -27,12 +27,16 @@ app.get('/hobbies', (req, res) => {
 });
 
 app.get('/projetos', (req, res) => {
-    res.render('projetos', { title: 'Projetos', projetos: projects });
+    res.render('projetos', { title: 'Projetos', projetosAcademicos: projects.academics, projetosProfissionais: projects.professional });
 });
 
-app.get('/academico', (req, res) => {
-    res.render('academico', { title: 'Acadêmico', academicos: academics });
+app.get('/formacao', (req, res) => {
+    res.render('formacao', { title: 'Formação', formacoes: formations });
 });
+
+app.listen(3000, () => {
+    console.log('Servidor rodando na porta 3000');
+})
 
 // Exporta o app para o Vercel
 module.exports = app;

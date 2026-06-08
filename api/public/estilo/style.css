@@ -236,9 +236,55 @@ ul.academico-list li::before {
     width: 100%;
 }
 
-.project_content h2 {
-    font-size: 48px;
-    margin-bottom: 1.5em;
+.projects-section {
+    margin-bottom: 4em;
+    width: 100%;
+}
+
+.section-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: var(--third);
+    border-radius: 2px;
+}
+
+.project-img-placeholder {
+    width: 159px;
+    height: 91px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.placeholder-icon {
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+.project-footer {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .project_content a {
