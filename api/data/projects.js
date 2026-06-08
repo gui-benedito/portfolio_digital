@@ -38,6 +38,16 @@ const projects = [
             <div class='icons'>
                 <img src="https://skillicons.dev/icons?i=react,nodejs,python,mongodb,postgresql" alt="Tecnologias usadas">
             </div>`
+    },
+    {
+        title: 'API 5°DSM - Veredito',
+        link: 'https://github.com/SkyFlyTeam/veredito-documentation',
+        img: '/img/veredito.png',
+        description: `Aplicativo mobile para análise automatizada de petições e recomendação de precedentes jurídicos, apoiando a tomada de decisões judiciais de forma ágil e fundamentada.`,
+        icons: `
+            <div class='icons'>
+                <img src="https://skillicons.dev/icons?i=flutter,nodejs,nextjs,postgresql" alt="Tecnologias usadas">
+            </div>`
     }
 ];
 
