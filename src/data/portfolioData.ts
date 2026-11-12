@@ -1,10 +1,12 @@
+const BASE_URL = import.meta.env.BASE_URL || '/';
+
 export const personalInfo = {
   name: "Guilherme dos Santos Benedito",
   role: "Engenharia de Dados & Desenvolvimento Backend",
   currentEducation: "Cursando Desenvolvimento de Software Multiplataforma (DSM) – FATEC São José dos Campos",
   period: "2024 – Presente",
   location: "São José dos Campos - SP, Brasil",
-  avatar: "./img/foto_guilherme.jpg",
+  avatar: `${BASE_URL}img/foto_guilherme.jpg`,
   summary: "Desenvolvedor de software com foco em Engenharia de Dados e Backend. Experiência na concepção da arquitetura de servidores backend, modelagem de bancos de dados relacionais e NoSQL, captação e processamento de telemetria com IoT e análise de dados. Coautor de publicação científica internacional sobre modelagem de dados e monitoramento de queimadas por sensores orbitais.",
   academicObjective: "Consolidar a formação tecnológica em DSM na FATEC SJC, aprofundando o desenvolvimento de arquiteturas de dados e engenharia de backend escalável.",
   professionalObjective: "Atuar como Engenheiro de Dados / Desenvolvedor Backend, construindo pipelines analíticos eficientes, modelagem de bancos de dados e APIs resilientes.",
@@ -20,7 +22,7 @@ export const personalInfo = {
     github: "https://github.com/gui-benedito",
     linkedin: "https://www.linkedin.com/in/guilherme-benedito/",
     instagram: "https://www.instagram.com/guisantos.b/",
-    email: "guilherme.benedito@aluno.cps.sp.gov.br"
+    email: "guilherme.benedito@fatec.sp.gov.br"
   }
 };
 
@@ -53,7 +55,7 @@ export const academicProjects = [
     role: "Dev Team",
     partner: "Interno",
     repoUrl: "https://github.com/SkyFlyTeam/SmartFarm",
-    image: "./img/apiI.svg",
+    image: `${BASE_URL}img/apiI.svg`,
     problem: "Necessidade de monitorar e analisar continuamente as variáveis ambientais de uma estufa indoor (como temperatura, umidade do solo e luminosidade) através de sensores para apoiar o manejo eficiente das culturas agrícolas.",
     solution: "Aplicação web para acompanhamento em tempo real dos valores captados pelos sensores de uma estufa indoor, fornecendo visualização gráfica interativa das leituras de telemetria.",
     technologies: ["Python", "Flask", "HTML", "CSS", "JavaScript", "SQLite", "Arduino / IoT"],
@@ -76,7 +78,7 @@ export const academicProjects = [
     role: "Dev Team",
     partner: "Interno",
     repoUrl: "https://github.com/SkyFlyTeam/cloudStock",
-    image: "./img/apiII.png",
+    image: `${BASE_URL}img/apiII.png`,
     problem: "Necessidade de organizar, controlar e registrar as movimentações de mercadorias e os níveis de estoque de armazéns de forma centralizada, ágil e livre de inconsistências manuais.",
     solution: "Aplicação web completa para gerenciamento e controle de estoque, permitindo o acompanhamento de inventário, cadastro de itens, fornecedores e rastreio de entradas e saídas.",
     technologies: ["TypeScript", "Node.js", "Express", "Sequelize ORM", "MySQL", "HTML", "CSS"],
@@ -99,7 +101,7 @@ export const academicProjects = [
     role: "Dev Team",
     partner: "Necto Systems",
     repoUrl: "https://github.com/SkyFlyTeam/BeeOnTime-documentation",
-    image: "./img/bot.png",
+    image: `${BASE_URL}img/bot.png`,
     problem: "Necessidade de registrar, monitorar e auditar os horários de entrada e saída dos colaboradores de uma empresa com segurança, integridade dos registros e interface responsiva para diferentes dispositivos.",
     solution: "Aplicação web moderna e responsiva para o controle de ponto eletrônico corporativo, fornecendo controle de jornada, relatórios e auditoria.",
     technologies: ["Java", "Spring Boot", "React", "Sequelize", "MongoDB", "NoSQL"],

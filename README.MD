@@ -21,19 +21,19 @@ O portfólio destaca competências técnicas (**Hard Skills**) e socioemocionais
 
 ## 🚀 Tecnologias Utilizadas no Portfólio
 
-* **Frontend:** React 18, Tailwind CSS, Lucide Icons
-* **Build & Bundler:** Vite
-* **Deploy & CI/CD:** GitHub Actions & GitHub Pages
+* **Frontend:** React 18, TypeScript, Tailwind CSS, Lucide Icons
+* **Build & Bundler:** Vite 6
+* **Deploy:** GitHub Pages (servido a partir da pasta `/docs` na branch `main`)
 
 ---
 
 ## 📂 Projetos Acadêmicos (APIs FATEC SJC - 1º ao 3º Semestre)
 
-| Semestre | Projeto | Papel | Tecnologias Principais |
-| :--- | :--- | :--- | :--- |
-| **1º DSM** | **Smart Farm** | Dev Team | Python, Flask, SQLite, IoT / Sensores |
-| **2º DSM** | **CloudStock** | Dev Team | TypeScript, Node.js, Express, Sequelize, MySQL |
-| **3º DSM** | **Bee On Time** | Dev Team | Java, Spring Boot, React, MongoDB, JWT |
+| Semestre | Projeto | Papel | Cliente | Tecnologias Principais |
+| :--- | :--- | :--- | :--- | :--- |
+| **1º DSM** | **Smart Farm** | Dev Team | Interno | Python, Flask, SQLite, Arduino / IoT |
+| **2º DSM** | **CloudStock** | Dev Team | Interno | TypeScript, Node.js, Express, Sequelize, MySQL |
+| **3º DSM** | **Bee On Time** | Dev Team | Necto Systems | Java, Spring Boot, React, MongoDB (NoSQL) |
 
 ---
 
@@ -54,7 +54,7 @@ npm install
 # 2. Iniciar servidor de desenvolvimento
 npm run dev
 
-# 3. Compilar versão de produção
+# 3. Compilar versão para a pasta /docs
 npm run build
 ```
 
@@ -62,7 +62,8 @@ npm run build
 
 ## 🌐 Deploy no GitHub Pages
 
-O deploy é automatizado via GitHub Actions sempre que um push é realizado na branch `main`.
-Para ativar no repositório:
-1. Acesse **Settings** > **Pages** no seu repositório no GitHub.
-2. Em **Build and deployment > Source**, selecione **GitHub Actions**.
+O site é publicado diretamente da pasta `/docs` na branch `main`:
+1. No repositório GitHub, acesse **Settings** > **Pages**.
+2. Em **Build and deployment > Source**, selecione **Deploy from a branch**.
+3. Em **Branch**, selecione **`main`** e a pasta **`/docs`**.
+4. Clique em **Save**.
