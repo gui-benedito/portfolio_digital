@@ -1,5 +1,28 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Production build
+dist/
+dist-ssr/
+
+# Python / Virtualenvs
 **/venv/
 **/.venv/
 **/__pycache__/
+
+# Environment / Deployments
 .vercel
-**/node_modules
+.env
+.env.local
+.env.*.local
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
